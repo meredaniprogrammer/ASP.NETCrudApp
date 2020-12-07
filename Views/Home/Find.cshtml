@@ -1,0 +1,32 @@
+﻿
+
+@{
+    ViewData["Title"] = "Find";
+}
+
+<h1>Find</h1>
+
+<h4>Student</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="FindResult">
+            
+            
+            <div class="form-group">
+                <label for="FindItem" class="control-label"></label>
+                <input name ="FindItem" class="form-control" />
+               
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Find" class="btn btn-outline-info" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class = "btn btn-outline-secondary" asp-action="IndexFile">Back to List</a>
+</div>
+
+

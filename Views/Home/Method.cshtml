@@ -1,0 +1,14 @@
+﻿@model IEnumerable<SharpCodeAspProject3.Models.HelperMethod>
+
+<p>
+    <a class="text-uppercase font-weight-bolder text-center text-success styleme" asp-action="Method">@ViewBag.MyMessage</a>
+</p>
+
+<h1>@ViewBag.MyMessage</h1>
+<div>
+    <a class="btn btn-outline-primary" asp-action="IndexFile">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
